@@ -1,0 +1,88 @@
+LEAVE & ATTENDANCE POLICY
+Company: GoAified Technologies Pvt. Ltd.
+Version: 2.1 | Effective: January 1, 2026
+Document Owner: HR Department
+
+─────────────────────────────────────────
+1. OVERVIEW
+─────────────────────────────────────────
+This policy governs all leave entitlements, application procedures, and attendance requirements for all full-time employees at GoAified Technologies.
+
+─────────────────────────────────────────
+2. LEAVE TYPES & ENTITLEMENTS
+─────────────────────────────────────────
+
+2.1 Annual Leave (Earned Leave)
+- Entitlement: 18 days per calendar year for employees with less than 5 years of service.
+- Entitlement: 21 days per calendar year for employees with 5 or more years of service.
+- Accrual: 1.5 days per month. Leave is credited on the 1st of each month.
+- Carry Forward: Up to 10 unused annual leave days may be carried forward to the next year. Any excess is forfeited.
+- Encashment: Up to 5 days of annual leave can be encashed annually during the month of March, subject to manager approval.
+- Application: Annual leave must be applied at least 3 working days in advance, except in emergencies.
+
+2.2 Sick Leave
+- Entitlement: 12 days per calendar year.
+- Usage: Sick leave may be taken for personal illness, injury, or medical appointments.
+- Medical Certificate: A medical certificate from a registered practitioner is required for sick leave exceeding 3 consecutive days.
+- No carry forward: Unused sick leave lapses at the end of the calendar year.
+
+2.3 Casual Leave
+- Entitlement: 6 days per calendar year.
+- Usage: For short-term personal needs or emergencies. Cannot be taken for more than 3 consecutive days.
+- Application: Should be applied in advance wherever possible.
+- No carry forward or encashment: Unused casual leave lapses at year end.
+
+2.4 Maternity Leave
+- Entitlement: 26 weeks (182 days) of paid leave for the first two children, as per the Maternity Benefit Act, 1961 (amended 2017).
+- For third child onward: 12 weeks of paid leave.
+- Adoption: Female employees adopting a child below 3 months receive 12 weeks of paid leave.
+- Application: Must be submitted at least 4 weeks in advance wherever possible.
+
+2.5 Paternity Leave
+- Entitlement: 10 working days of paid leave.
+- Must be availed within 6 months of the child's birth or adoption.
+
+2.6 Bereavement Leave
+- Entitlement: 5 working days for immediate family (spouse, children, parents, siblings).
+- 3 working days for extended family (grandparents, in-laws).
+
+2.7 Compensatory Off (Comp-Off)
+- Earned when an employee works on a designated holiday or weekend, with prior manager approval.
+- Must be availed within 60 days of earning.
+
+─────────────────────────────────────────
+3. LEAVE APPLICATION PROCEDURE
+─────────────────────────────────────────
+1. Log into the HRMS portal (hrms.goaified.com).
+2. Navigate to Leave > Apply Leave.
+3. Select leave type, dates, and add a reason.
+4. Submit for manager approval.
+5. Managers must approve or reject within 2 working days.
+6. Emergency leave can be applied retroactively within 1 working day.
+
+─────────────────────────────────────────
+4. ATTENDANCE & WORKING HOURS
+─────────────────────────────────────────
+- Core working hours: 10:00 AM – 7:00 PM IST, Monday to Friday.
+- Minimum billable hours: 8 hours per working day.
+- Flexi-time: Employees may start between 9:00 AM – 11:00 AM, provided 8 hours are completed.
+- Remote work: Up to 2 days per week for roles designated as hybrid.
+- Late arrival: Arriving more than 30 minutes after scheduled start time twice in a month is treated as half-day leave.
+
+─────────────────────────────────────────
+5. PUBLIC HOLIDAYS
+─────────────────────────────────────────
+GoAified observes 11 national/regional public holidays per year as announced by HR at the start of the year. The 2026 holiday calendar is available on the HRMS portal.
+
+─────────────────────────────────────────
+6. LEAVE WITHOUT PAY (LWP)
+─────────────────────────────────────────
+- Leave without pay is granted only after all applicable leave balances are exhausted.
+- Requires VP-level approval for more than 5 consecutive days.
+- LWP impacts annual increments and bonus calculations on a pro-rata basis.
+
+─────────────────────────────────────────
+7. POLICY VIOLATIONS
+─────────────────────────────────────────
+- Taking leave without approval may be treated as Leave Without Pay.
+- Falsifying leave records is a disciplinary offence and may lead to termination.

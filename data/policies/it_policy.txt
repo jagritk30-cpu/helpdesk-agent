@@ -1,0 +1,87 @@
+IT USAGE & SECURITY POLICY
+Company: GoAified Technologies Pvt. Ltd.
+Version: 3.0 | Effective: January 1, 2026
+Document Owner: IT Department
+
+─────────────────────────────────────────
+1. PURPOSE & SCOPE
+─────────────────────────────────────────
+This policy governs acceptable use of all IT systems, devices, software, and networks owned or operated by GoAified Technologies. It applies to all employees, contractors, interns, and third-party vendors with access to company resources.
+
+─────────────────────────────────────────
+2. DEVICE & EQUIPMENT POLICY
+─────────────────────────────────────────
+
+2.1 Company-Issued Devices
+- All company laptops, phones, and peripherals remain the property of GoAified.
+- Devices must be returned upon resignation, termination, or role change within 2 working days.
+- Employees are responsible for physical care of assigned equipment.
+- Loss or damage must be reported to IT within 24 hours via the IT helpdesk portal.
+- Personal use of company devices is permitted for incidental purposes only (e.g., checking personal email briefly). Heavy personal use is prohibited.
+
+2.2 BYOD (Bring Your Own Device)
+- Personal devices may be used to access company email and collaboration tools only after enrolling in Mobile Device Management (MDM).
+- Jailbroken or rooted devices may not be enrolled in MDM.
+- IT reserves the right to remotely wipe company data from enrolled personal devices upon termination.
+
+─────────────────────────────────────────
+3. SOFTWARE & LICENSING
+─────────────────────────────────────────
+- Only IT-approved software may be installed on company devices. Approved software list: software-catalog.goaified.com.
+- Employees must not use unlicensed or pirated software on any company device.
+- Software installation requests must be raised via an IT ticket. Approval typically takes 1–2 business days.
+- Cloud/SaaS tool subscriptions must be procured through IT to ensure security review and billing centralization.
+
+─────────────────────────────────────────
+4. NETWORK & INTERNET ACCESS
+─────────────────────────────────────────
+- Company WiFi (SSID: GoAified-Corp) is for business use. Guests must use the GoAified-Guest network.
+- VPN (GlobalProtect) must be used for all remote access to internal systems.
+- VPN credentials are issued during onboarding and expire every 90 days. Renewal is initiated through IT helpdesk.
+- Prohibited internet activities: streaming for personal entertainment, torrenting, accessing gambling or adult content sites, cryptocurrency mining.
+- All internet traffic on the corporate network is monitored and logged for security compliance.
+
+─────────────────────────────────────────
+5. DATA SECURITY & CONFIDENTIALITY
+─────────────────────────────────────────
+- All sensitive company data must be stored in approved company storage (Google Drive or company servers).
+- Employees must not store company data on personal cloud storage (e.g., personal Dropbox, iCloud).
+- Confidential data must be shared only via encrypted channels (email with encryption or company Slack).
+- Employees must not share passwords, login credentials, or access tokens with colleagues.
+- Password requirements: Minimum 12 characters, at least one uppercase, lowercase, digit, and special character. Must be rotated every 90 days.
+- Multi-factor authentication (MFA) is mandatory for all company accounts.
+
+─────────────────────────────────────────
+6. ACCESS MANAGEMENT
+─────────────────────────────────────────
+- Access to systems is provisioned on a need-to-know, least-privilege basis.
+- New hire access provisioning is completed within 2 business days of joining.
+- Access requests for additional tools or permissions must be submitted via IT helpdesk and approved by the requesting employee's manager.
+- Access is revoked within 4 hours of an employee's last working day being confirmed.
+- Privileged access (admin rights) is reviewed quarterly.
+
+─────────────────────────────────────────
+7. INCIDENT REPORTING
+─────────────────────────────────────────
+- Security incidents (phishing, malware, data breach, unauthorized access) must be reported to security@goaified.com immediately.
+- IT helpdesk tickets must be raised for all hardware/software issues.
+- SLA for ticket response:
+  - Critical: 1 hour response, 4 hour resolution
+  - High: 4 hour response, 8 hour resolution
+  - Medium: 8 hour response, 24 hour resolution
+  - Low: 24 hour response, 72 hour resolution
+
+─────────────────────────────────────────
+8. IT HELPDESK
+─────────────────────────────────────────
+- Helpdesk portal: helpdesk.goaified.com
+- Email: it-support@goaified.com
+- Phone: +91-11-XXXX-XXXX (Mon–Fri, 9 AM – 8 PM IST)
+- Walk-in: IT office, Ground Floor, GoAified HQ, Delhi
+
+─────────────────────────────────────────
+9. CONSEQUENCES OF VIOLATIONS
+─────────────────────────────────────────
+- Minor violations: Verbal/written warning.
+- Moderate violations: Formal disciplinary action, potential salary hold.
+- Severe violations (data breach, unauthorized access, software piracy): Immediate termination and potential legal action.
