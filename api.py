@@ -6,7 +6,11 @@ Endpoints:
   GET  /health        — Health check
 """
 
+import os
+from pathlib import Path
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from agent.agent import run_agent
@@ -17,6 +21,10 @@ app = FastAPI(
     description="An AI-powered HR and IT support agent with RAG, MCP, and guardrails.",
     version="1.0.0",
 )
+
+STATIC_DIR = Path(__file__).parent / "static"
+if STATIC_DIR.exists():
+    app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 
 
 # ── Schemas ───────────────────────────────────────────────────────────────────
@@ -41,6 +49,15 @@ class IngestResponse(BaseModel):
 
 
 # ── Routes ────────────────────────────────────────────────────────────────────
+
+@app.get("/", response_class=HTMLResponse)
+def index():
+    """Serve the modern interactive Helpdesk UI."""
+    index_file = STATIC_DIR / "index.html"
+    if index_file.exists():
+        return FileResponse(index_file)
+    return HTMLResponse("<h1>Helpdesk Agent API Running. UI not found.</h1>")
+
 
 @app.get("/health")
 def health():
