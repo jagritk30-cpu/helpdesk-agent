@@ -23,7 +23,8 @@ from agent.rag import retrieve_policy_context, build_vectorstore
 
 load_dotenv()
 
-MODEL = os.getenv("AGENT_MODEL", "gemini-2.0-flash")
+MODEL = os.getenv("AGENT_MODEL", "gemini-2.5-flash")
+FALLBACK_MODELS = [MODEL, "gemini-2.5-flash", "gemini-3.5-flash", "gemini-3.8-flash"]
 
 
 def get_genai_client() -> genai.Client:
@@ -33,7 +34,28 @@ def get_genai_client() -> genai.Client:
             "GOOGLE_API_KEY is not configured. Please add your key to .env. "
             "You can get a free key at https://aistudio.google.com"
         )
-    return genai.Client(api_key=api_key)
+    return genai.Client(api_key=api_key, http_options={"api_version": "v1beta"})
+
+
+def _generate_content_robust(client: genai.Client, contents: list, config: types.GenerateContentConfig):
+    last_err = None
+    seen = set()
+    for m in FALLBACK_MODELS:
+        if m in seen:
+            continue
+        seen.add(m)
+        try:
+            return client.models.generate_content(
+                model=m,
+                contents=contents,
+                config=config,
+            )
+        except Exception as e:
+            last_err = e
+            if "503" in str(e) or "UNAVAILABLE" in str(e):
+                continue
+            raise e
+    raise last_err
 
 # ── Tool declarations for Gemini function calling ─────────────────────────────
 
@@ -194,11 +216,7 @@ def run_agent(user_message: str, chat_history: list[dict] | None = None) -> str:
 
     # --- Step 4: Agentic loop ---
     for _ in range(5):
-        response = client.models.generate_content(
-            model=MODEL,
-            contents=contents,
-            config=config,
-        )
+        response = _generate_content_robust(client, contents, config)
 
         # Collect any function calls from all candidates/parts
         fn_calls = []

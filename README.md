@@ -305,8 +305,8 @@ HelpDesk Agent/
 | `POSTGRES_USER` | *(your OS username)* | DB user |
 | `POSTGRES_PASSWORD` | *(blank)* | DB password |
 | `CHROMA_PERSIST_DIR` | `./chroma_db` | ChromaDB persist directory |
-| `AGENT_MODEL` | `gemini-2.0-flash` | Gemini model to use |
-| `EMBEDDING_MODEL` | `models/text-embedding-004` | Gemini embedding model |
+| `AGENT_MODEL` | `gemini-3.8-flash` | Gemini model to use |
+| `EMBEDDING_MODEL` | `models/gemini-embedding-001` | Gemini embedding model |
 | `API_PORT` | `8000` | FastAPI port |
 
 ---

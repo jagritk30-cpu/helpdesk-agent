@@ -15,7 +15,7 @@ load_dotenv()
 
 POLICY_DIR = Path(__file__).parent.parent / "data" / "policies"
 CHROMA_DIR = os.getenv("CHROMA_PERSIST_DIR", "./chroma_db")
-EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "models/text-embedding-004")
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "models/gemini-embedding-001")
 COLLECTION_NAME = "hr_it_policies"
 
 
