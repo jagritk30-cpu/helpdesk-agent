@@ -89,9 +89,12 @@ psql -U helpdesk_user -d helpdesk -f scripts/init_db.sql
 # One-shot setup (ingest policies into ChromaDB)
 python scripts/setup.py
 
-# Start the API server
+# Start the API & Web UI server
 uvicorn api:app --reload
 ```
+
+- **Interactive Web UI:** Open [http://localhost:8000](http://localhost:8000) in your browser.
+- **Swagger API Docs:** Available at [http://localhost:8000/docs](http://localhost:8000/docs).
 
 ---
 
