@@ -106,7 +106,7 @@
         </div>
         <div class="flex items-center justify-between text-gray-300">
           <span class="text-gray-400 flex items-center gap-1.5"><i data-lucide="cpu" class="w-3.5 h-3.5 text-emerald-400"></i> Model</span>
-          <span class="text-emerald-400 bg-emerald-500/10 px-1.5 rounded">Gemini 2.5 Flash</span>
+          <span class="text-emerald-400 bg-emerald-500/10 px-1.5 rounded">Gemini 3.5 Flash</span>
         </div>
       </div>
     </div>
@@ -290,7 +290,7 @@
         </button>
       </form>
       <p class="text-[11px] text-center text-gray-500 mt-2">
-        Powered by Gemini 2.5 Flash, PostgreSQL MCP Server, ChromaDB, and Python Guardrails.
+        Powered by Gemini 3.5 Flash, PostgreSQL MCP Server, ChromaDB, and Python Guardrails.
       </p>
     </div>
   </main>
@@ -440,11 +440,16 @@
           </div>
         `;
       } else {
-        const isWarning = text.includes('⚠️') || text.includes('prompt injection');
+        const isInjection = text.includes('detected a prompt injection attempt') || text.includes('prompt injection attempt');
+        const isError = text.startsWith('⚠️ Error:') || text.startsWith('⚠️ Connection error:');
         const isBlocked = text.includes('outside that scope') || text.includes('HR/IT Helpdesk assistant');
         
         let headerBadge = '';
-        if (isWarning) {
+        if (isError) {
+          headerBadge = `<span class="inline-flex items-center gap-1 text-[10px] font-semibold text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/20 mb-2">
+            <i data-lucide="alert-triangle" class="w-3 h-3"></i> System Error
+          </span>`;
+        } else if (isInjection) {
           headerBadge = `<span class="inline-flex items-center gap-1 text-[10px] font-semibold text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/20 mb-2">
             <i data-lucide="shield-alert" class="w-3 h-3"></i> Guardrail Triggered (Prompt Injection)
           </span>`;

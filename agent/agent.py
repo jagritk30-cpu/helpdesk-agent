@@ -23,13 +23,12 @@ from agent.rag import retrieve_policy_context, build_vectorstore
 
 load_dotenv()
 
-MODEL = os.getenv("AGENT_MODEL", "gemini-2.5-flash")
+MODEL = os.getenv("AGENT_MODEL", "gemini-3.5-flash-lite")
 FALLBACK_MODELS = [
     MODEL,
-    "gemini-2.5-flash",
-    "gemini-2.5-flash-lite",
-    "gemini-3.5-flash",
     "gemini-3.5-flash-lite",
+    "gemini-3.5-flash",
+    "gemini-2.5-flash",
 ]
 
 
@@ -58,10 +57,7 @@ def _generate_content_robust(client: genai.Client, contents: list, config: types
             )
         except Exception as e:
             last_err = e
-            err_str = str(e)
-            if "503" in err_str or "UNAVAILABLE" in err_str or "429" in err_str or "RESOURCE_EXHAUSTED" in err_str:
-                continue
-            raise e
+            continue
     raise last_err
 
 # ── Tool declarations for Gemini function calling ─────────────────────────────
