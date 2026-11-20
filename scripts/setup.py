@@ -8,9 +8,14 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Add project root to sys.path so agent module can be imported
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(PROJECT_ROOT / ".env")
 
 
 def run_sql_file(sql_file: Path):
